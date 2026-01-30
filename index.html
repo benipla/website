@@ -1,0 +1,2580 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Beni Pla - Comediante español de stand-up comedy en Miami. Shows en vivo, humor ácido y espectáculos inolvidables. Compra tus entradas ahora.">
+    <meta name="keywords" content="Beni Pla, stand up comedy, comedia en español, Miami, comediante español, humor, shows en vivo, stand up Miami">
+    <meta name="author" content="Beni Pla">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://benipla.com/">
+    <meta property="og:title" content="Beni Pla | Stand-Up Comedy en Español">
+    <meta property="og:description" content="Comediante español en Miami. Humor ácido, observacional y sin filtros. Consigue tus entradas para el próximo show.">
+    <meta property="og:image" content="assets/images/beni-og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://benipla.com/">
+    <meta name="twitter:title" content="Beni Pla | Stand-Up Comedy en Español">
+    <meta name="twitter:description" content="Comediante español en Miami. Humor ácido, observacional y sin filtros.">
+    <meta name="twitter:image" content="assets/images/beni-og-image.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://benipla.com/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    
+    <title>Beni Pla | Stand-Up Comedy en Español | Miami</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Schema.org markup for LLMs and Search Engines -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Beni Pla",
+        "jobTitle": "Stand-Up Comedian",
+        "description": "Comediante español de stand-up comedy residente en Miami. Especializado en humor observacional y ácido en español.",
+        "url": "https://benipla.com",
+        "image": "https://benipla.com/assets/images/beni-hero.jpg",
+        "sameAs": [
+            "https://instagram.com/benipla",
+            "https://tiktok.com/@benipla",
+            "https://youtube.com/@benipla"
+        ],
+        "knowsLanguage": ["es", "en", "ca"],
+        "nationality": "Spanish",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Beni Pla Comedy"
+        },
+        "performerIn": {
+            "@type": "EventSeries",
+            "name": "Beni Pla Stand-Up Shows",
+            "description": "Shows de stand-up comedy en español en Miami y otras ciudades"
+        }
+    }
+    </script>
+    
+    <!-- llms.txt optimization -->
+    <meta name="ai-content-declaration" content="This is the official website of Beni Pla, a Spanish stand-up comedian based in Miami, Florida. He performs comedy shows in Spanish. For booking inquiries, use the contact form. For show dates, check the Agenda section.">
+    
+    <style>
+        :root {
+            --neon-blue: #00d4ff;
+            --neon-pink: #ff006e;
+            --neon-red: #ff1744;
+            --deep-purple: #1a0a2e;
+            --midnight: #0a0a0f;
+            --dark-surface: #12121a;
+            --text-primary: #ffffff;
+            --text-secondary: #b0b0c0;
+            --gradient-neon: linear-gradient(135deg, var(--neon-blue), var(--neon-pink));
+            --glow-blue: 0 0 20px rgba(0, 212, 255, 0.5);
+            --glow-pink: 0 0 20px rgba(255, 0, 110, 0.5);
+            --glow-red: 0 0 20px rgba(255, 23, 68, 0.5);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: var(--midnight);
+            color: var(--text-primary);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+        
+        /* Noise texture overlay */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+            opacity: 0.03;
+            pointer-events: none;
+            z-index: 1000;
+        }
+        
+        /* Navigation */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            padding: 1.5rem 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(to bottom, rgba(10, 10, 15, 0.95), transparent);
+            backdrop-filter: blur(10px);
+        }
+        
+        .logo {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2.5rem;
+            letter-spacing: 4px;
+            background: var(--gradient-neon);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-decoration: none;
+            text-shadow: var(--glow-blue);
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--neon-blue);
+            transition: width 0.3s ease;
+            box-shadow: var(--glow-blue);
+        }
+        
+        .nav-links a:hover {
+            color: var(--neon-blue);
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 5px;
+        }
+        
+        .mobile-menu-btn span {
+            width: 25px;
+            height: 2px;
+            background: var(--neon-blue);
+            transition: all 0.3s ease;
+        }
+        
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 2rem;
+            overflow: hidden;
+        }
+        
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(ellipse at 20% 80%, rgba(255, 0, 110, 0.15) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 20%, rgba(0, 212, 255, 0.15) 0%, transparent 50%),
+                radial-gradient(ellipse at 50% 50%, rgba(26, 10, 46, 0.8) 0%, var(--midnight) 70%);
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            max-width: 1400px;
+            width: 100%;
+            align-items: center;
+        }
+        
+        .hero-text {
+            animation: fadeInUp 1s ease forwards;
+        }
+        
+        .hero-tagline {
+            font-size: 1rem;
+            color: var(--neon-blue);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        
+        .hero-name {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(4rem, 10vw, 8rem);
+            line-height: 0.9;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(180deg, #ffffff 0%, #b0b0c0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.5rem;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+            font-weight: 300;
+        }
+        
+        .hero-quote {
+            font-size: 1.25rem;
+            font-style: italic;
+            color: var(--neon-pink);
+            margin-bottom: 2.5rem;
+            padding-left: 1.5rem;
+            border-left: 3px solid var(--neon-pink);
+            text-shadow: var(--glow-pink);
+        }
+        
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1.25rem 2.5rem;
+            background: var(--gradient-neon);
+            color: var(--midnight);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            border-radius: 50px;
+            transition: all 0.4s ease;
+            box-shadow: var(--glow-blue), var(--glow-pink);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.5s ease;
+        }
+        
+        .cta-button:hover::before {
+            left: 100%;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 0 40px rgba(0, 212, 255, 0.6), 0 0 40px rgba(255, 0, 110, 0.6);
+        }
+        
+        .cta-button svg {
+            width: 20px;
+            height: 20px;
+            animation: bounce 2s infinite;
+        }
+        
+        .hero-image-container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            animation: fadeInRight 1s ease forwards;
+        }
+        
+        .hero-image {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 20px;
+            position: relative;
+            z-index: 2;
+            box-shadow: 
+                0 0 60px rgba(0, 212, 255, 0.3),
+                0 0 120px rgba(255, 0, 110, 0.2);
+        }
+        
+        .hero-image-glow {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 120%;
+            height: 120%;
+            background: radial-gradient(circle, rgba(0, 212, 255, 0.2) 0%, transparent 60%);
+            filter: blur(40px);
+            z-index: 1;
+        }
+        
+        /* Floating elements */
+        .floating-shape {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(60px);
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .shape-1 {
+            width: 300px;
+            height: 300px;
+            background: rgba(0, 212, 255, 0.1);
+            top: 10%;
+            left: 5%;
+            animation-delay: 0s;
+        }
+        
+        .shape-2 {
+            width: 200px;
+            height: 200px;
+            background: rgba(255, 0, 110, 0.1);
+            bottom: 20%;
+            right: 10%;
+            animation-delay: 2s;
+        }
+        
+        .shape-3 {
+            width: 150px;
+            height: 150px;
+            background: rgba(255, 23, 68, 0.1);
+            top: 40%;
+            right: 30%;
+            animation-delay: 4s;
+        }
+        
+        /* Section Styles */
+        section {
+            padding: 6rem 2rem;
+            position: relative;
+        }
+        
+        .section-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        
+        .section-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(3rem, 6vw, 5rem);
+            letter-spacing: 4px;
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--gradient-neon);
+            border-radius: 2px;
+        }
+        
+        .section-subtitle {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 1.5rem auto 0;
+        }
+        
+        /* Agenda Section */
+        #agenda {
+            background: linear-gradient(180deg, var(--midnight) 0%, var(--deep-purple) 50%, var(--midnight) 100%);
+        }
+        
+        .shows-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        .show-card {
+            background: rgba(18, 18, 26, 0.8);
+            border: 1px solid rgba(0, 212, 255, 0.1);
+            border-radius: 16px;
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            gap: 2rem;
+            align-items: center;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .show-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: var(--gradient-neon);
+        }
+        
+        .show-card:hover {
+            border-color: rgba(0, 212, 255, 0.3);
+            transform: translateX(10px);
+            box-shadow: 0 10px 40px rgba(0, 212, 255, 0.1);
+        }
+        
+        .show-date {
+            text-align: center;
+            min-width: 80px;
+        }
+        
+        .show-day {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 3rem;
+            line-height: 1;
+            color: var(--neon-blue);
+            text-shadow: var(--glow-blue);
+        }
+        
+        .show-month {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--text-secondary);
+        }
+        
+        .show-info h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .show-venue {
+            color: var(--text-secondary);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .show-venue svg {
+            width: 16px;
+            height: 16px;
+            color: var(--neon-pink);
+        }
+        
+        .ticket-btn {
+            padding: 0.875rem 2rem;
+            background: transparent;
+            border: 2px solid var(--neon-red);
+            color: var(--neon-red);
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        
+        .ticket-btn:hover {
+            background: var(--neon-red);
+            color: white;
+            box-shadow: var(--glow-red);
+        }
+        
+        .no-shows {
+            text-align: center;
+            padding: 3rem;
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+        
+        /* Media Section */
+        #media {
+            background: var(--midnight);
+        }
+        
+        .media-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+        
+        .video-card {
+            background: var(--dark-surface);
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .video-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 212, 255, 0.15);
+        }
+        
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+        }
+        
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        /* Reels Carousel */
+        .reels-section {
+            margin-top: 4rem;
+        }
+        
+        .reels-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2rem;
+            letter-spacing: 2px;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .reels-title svg {
+            width: 32px;
+            height: 32px;
+            color: var(--neon-pink);
+        }
+        
+        .reels-carousel {
+            display: flex;
+            gap: 1.5rem;
+            overflow-x: auto;
+            padding: 1rem 0;
+            scroll-snap-type: x mandatory;
+            scrollbar-width: none;
+        }
+        
+        .reels-carousel::-webkit-scrollbar {
+            display: none;
+        }
+        
+        .reel-card {
+            flex: 0 0 280px;
+            scroll-snap-align: start;
+            background: var(--dark-surface);
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            border: 1px solid rgba(255, 0, 110, 0.1);
+        }
+        
+        .reel-card:hover {
+            transform: scale(1.05);
+            border-color: var(--neon-pink);
+            box-shadow: 0 10px 30px rgba(255, 0, 110, 0.2);
+        }
+        
+        .reel-thumbnail {
+            width: 100%;
+            aspect-ratio: 9/16;
+            object-fit: cover;
+        }
+        
+        .reel-link {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        /* About Section */
+        #sobre-mi {
+            background: linear-gradient(180deg, var(--midnight) 0%, var(--deep-purple) 100%);
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .about-image-container {
+            position: relative;
+        }
+        
+        .about-image {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+        
+        .about-image-border {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: -20px;
+            bottom: -20px;
+            border: 2px solid var(--neon-blue);
+            border-radius: 20px;
+            z-index: -1;
+        }
+        
+        .about-text h3 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            background: var(--gradient-neon);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .about-text p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+        
+        .about-stats {
+            display: flex;
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 3rem;
+            color: var(--neon-blue);
+            text-shadow: var(--glow-blue);
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* Contact Section */
+        #contacto {
+            background: var(--midnight);
+        }
+        
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+        
+        .contact-info h3 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .contact-info p {
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .social-link {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--dark-surface);
+            border-radius: 50%;
+            color: var(--text-secondary);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .social-link:hover {
+            background: var(--gradient-neon);
+            color: var(--midnight);
+            transform: translateY(-5px);
+            box-shadow: var(--glow-blue);
+        }
+        
+        .social-link svg {
+            width: 24px;
+            height: 24px;
+        }
+        
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        .form-group {
+            position: relative;
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 1rem 1.25rem;
+            background: var(--dark-surface);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            color: var(--text-primary);
+            font-family: 'Outfit', sans-serif;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--neon-blue);
+            box-shadow: 0 0 20px rgba(0, 212, 255, 0.1);
+        }
+        
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        .form-group label {
+            position: absolute;
+            left: 1.25rem;
+            top: 1rem;
+            color: var(--text-secondary);
+            transition: all 0.3s ease;
+            pointer-events: none;
+            background: var(--dark-surface);
+            padding: 0 0.5rem;
+        }
+        
+        .form-group input:focus + label,
+        .form-group input:not(:placeholder-shown) + label,
+        .form-group textarea:focus + label,
+        .form-group textarea:not(:placeholder-shown) + label {
+            top: -0.5rem;
+            font-size: 0.8rem;
+            color: var(--neon-blue);
+        }
+        
+        .submit-btn {
+            padding: 1.25rem 2.5rem;
+            background: var(--gradient-neon);
+            color: var(--midnight);
+            border: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.4s ease;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--glow-blue), var(--glow-pink);
+        }
+        
+        /* Footer */
+        .footer {
+            background: var(--dark-surface);
+            padding: 3rem 2rem 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+        
+        .footer-logo {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.5rem;
+            letter-spacing: 3px;
+            color: var(--text-secondary);
+        }
+        
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+        }
+        
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--neon-blue);
+        }
+        
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 2rem auto 0;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .footer-copyright {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+        
+        .admin-btn {
+            width: 35px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: transparent;
+            border: none;
+            color: rgba(255, 255, 255, 0.2);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-radius: 50%;
+        }
+        
+        .admin-btn:hover {
+            color: var(--neon-blue);
+            background: rgba(0, 212, 255, 0.1);
+        }
+        
+        .admin-btn svg {
+            width: 18px;
+            height: 18px;
+        }
+        
+        /* Admin Panel */
+        .admin-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 1000;
+            overflow-y: auto;
+            padding: 2rem;
+        }
+        
+        .admin-overlay.active {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        
+        .admin-panel {
+            background: var(--dark-surface);
+            border-radius: 20px;
+            padding: 2.5rem;
+            max-width: 900px;
+            width: 100%;
+            margin: 2rem auto;
+            border: 1px solid rgba(0, 212, 255, 0.2);
+        }
+        
+        .admin-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .admin-header h2 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2rem;
+            letter-spacing: 2px;
+        }
+        
+        .close-admin {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .close-admin:hover {
+            border-color: var(--neon-red);
+            color: var(--neon-red);
+        }
+        
+        .admin-tabs {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .admin-tab {
+            padding: 0.75rem 1.5rem;
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-secondary);
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+        
+        .admin-tab.active,
+        .admin-tab:hover {
+            background: var(--gradient-neon);
+            color: var(--midnight);
+            border-color: transparent;
+        }
+        
+        .admin-section {
+            display: none;
+        }
+        
+        .admin-section.active {
+            display: block;
+        }
+        
+        .admin-form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .admin-form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        
+        .admin-form-group input,
+        .admin-form-group textarea {
+            width: 100%;
+            padding: 0.875rem 1rem;
+            background: var(--midnight);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            color: var(--text-primary);
+            font-family: 'Outfit', sans-serif;
+        }
+        
+        .admin-form-group input:focus,
+        .admin-form-group textarea:focus {
+            outline: none;
+            border-color: var(--neon-blue);
+        }
+        
+        .admin-btn-primary {
+            padding: 0.875rem 2rem;
+            background: var(--gradient-neon);
+            color: var(--midnight);
+            border: none;
+            border-radius: 30px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .admin-btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--glow-blue);
+        }
+        
+        .admin-btn-secondary {
+            padding: 0.875rem 2rem;
+            background: transparent;
+            border: 1px solid var(--neon-blue);
+            color: var(--neon-blue);
+            border-radius: 30px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-left: 1rem;
+        }
+        
+        .admin-btn-secondary:hover {
+            background: rgba(0, 212, 255, 0.1);
+        }
+        
+        .media-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        
+        .media-item {
+            position: relative;
+            background: var(--midnight);
+            border-radius: 10px;
+            overflow: hidden;
+            aspect-ratio: 16/9;
+        }
+        
+        .media-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .media-item-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .media-item:hover .media-item-overlay {
+            opacity: 1;
+        }
+        
+        .media-delete-btn {
+            padding: 0.5rem 1rem;
+            background: var(--neon-red);
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.8rem;
+        }
+        
+        .file-upload-area {
+            border: 2px dashed rgba(0, 212, 255, 0.3);
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-bottom: 1rem;
+        }
+        
+        .file-upload-area:hover {
+            border-color: var(--neon-blue);
+            background: rgba(0, 212, 255, 0.05);
+        }
+        
+        .file-upload-area svg {
+            width: 48px;
+            height: 48px;
+            color: var(--neon-blue);
+            margin-bottom: 1rem;
+        }
+        
+        .file-upload-area p {
+            color: var(--text-secondary);
+        }
+        
+        .file-upload-area input {
+            display: none;
+        }
+        
+        /* Login Modal */
+        .login-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.95);
+            z-index: 1001;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .login-overlay.active {
+            display: flex;
+        }
+        
+        .login-modal {
+            background: var(--dark-surface);
+            padding: 3rem;
+            border-radius: 20px;
+            width: 100%;
+            max-width: 400px;
+            border: 1px solid rgba(0, 212, 255, 0.2);
+        }
+        
+        .login-modal h2 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            letter-spacing: 2px;
+        }
+        
+        .login-error {
+            background: rgba(255, 23, 68, 0.1);
+            border: 1px solid var(--neon-red);
+            color: var(--neon-red);
+            padding: 1rem;
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+            display: none;
+            text-align: center;
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(5px);
+            }
+            60% {
+                transform: translateY(3px);
+            }
+        }
+        
+        @keyframes glow {
+            0%, 100% {
+                box-shadow: var(--glow-blue);
+            }
+            50% {
+                box-shadow: var(--glow-pink);
+            }
+        }
+        
+        /* Responsive */
+        @media (max-width: 992px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .hero-image-container {
+                order: -1;
+            }
+            
+            .hero-image {
+                max-width: 400px;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-content {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav {
+                padding: 1rem 1.5rem;
+            }
+            
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--midnight);
+                flex-direction: column;
+                padding: 2rem;
+                gap: 1.5rem;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .mobile-menu-btn {
+                display: flex;
+            }
+            
+            .show-card {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 1rem;
+            }
+            
+            .show-date {
+                display: flex;
+                gap: 0.5rem;
+                justify-content: center;
+                align-items: baseline;
+            }
+            
+            .media-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .about-stats {
+                justify-content: center;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .footer-bottom {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+        
+        /* Loading Animation */
+        .loading {
+            display: flex;
+            justify-content: center;
+            padding: 2rem;
+        }
+        
+        .loading-spinner {
+            width: 40px;
+            height: 40px;
+            border: 3px solid rgba(0, 212, 255, 0.1);
+            border-top-color: var(--neon-blue);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        
+        /* Toast Notifications */
+        .toast-container {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            z-index: 2000;
+        }
+        
+        .toast {
+            background: var(--dark-surface);
+            padding: 1rem 1.5rem;
+            border-radius: 10px;
+            margin-top: 1rem;
+            border-left: 4px solid var(--neon-blue);
+            animation: slideIn 0.3s ease;
+        }
+        
+        .toast.success {
+            border-left-color: #00ff88;
+        }
+        
+        .toast.error {
+            border-left-color: var(--neon-red);
+        }
+        
+        @keyframes slideIn {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <a href="#" class="logo">BENI PLA</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#agenda">Agenda</a></li>
+            <li><a href="#media">Media</a></li>
+            <li><a href="#sobre-mi">Sobre Mí</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="floating-shape shape-3"></div>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-tagline">Stand-Up Comedy en Español</p>
+                <h1 class="hero-name">BENI<br>PLA</h1>
+                <p class="hero-subtitle">Comediante español en Miami</p>
+                <p class="hero-quote" id="heroQuote">"La vida es demasiado corta para no reírse de ella"</p>
+                <a href="#agenda" class="cta-button">
+                    Próximos Shows
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 5v14M19 12l-7 7-7-7"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="hero-image-container">
+                <div class="hero-image-glow"></div>
+                <img src="assets/images/beni-hero.jpg" alt="Beni Pla - Comediante" class="hero-image" id="heroImage">
+            </div>
+        </div>
+    </section>
+    
+    <!-- Agenda Section -->
+    <section id="agenda">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">PRÓXIMOS SHOWS</h2>
+                <p class="section-subtitle">No te pierdas la oportunidad de verme en vivo. Elige tu ciudad y reserva tu entrada.</p>
+            </div>
+            <div class="shows-container" id="showsContainer">
+                <div class="loading">
+                    <div class="loading-spinner"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Media Section -->
+    <section id="media">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">MEDIA</h2>
+                <p class="section-subtitle">Clips de mis mejores momentos en el escenario</p>
+            </div>
+            <div class="media-grid" id="mediaGrid">
+                <!-- Videos will be loaded dynamically -->
+            </div>
+            
+            <!-- Reels Carousel -->
+            <div class="reels-section">
+                <h3 class="reels-title">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073z"/>
+                        <path d="M12 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8z"/>
+                        <circle cx="18.406" cy="5.594" r="1.44"/>
+                    </svg>
+                    Reels
+                </h3>
+                <div class="reels-carousel" id="reelsCarousel">
+                    <!-- Reels will be loaded dynamically -->
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="sobre-mi">
+        <div class="section-container">
+            <div class="about-content">
+                <div class="about-image-container">
+                    <img src="assets/images/beni-about.jpg" alt="Beni Pla" class="about-image" id="aboutImage">
+                    <div class="about-image-border"></div>
+                </div>
+                <div class="about-text">
+                    <h3>¿QUIÉN ES BENI PLA?</h3>
+                    <p id="bioText1">
+                        Soy un comediante español residente en Miami que hace stand-up comedy en español. Mi humor es una mezcla de observaciones cotidianas, experiencias de inmigrante y esa honestidad brutal que solo los españoles sabemos dar.
+                    </p>
+                    <p id="bioText2">
+                        Desde que pisé un escenario por primera vez, supe que hacer reír a la gente era mi vocación. Ahora, llevo mi comedia por todo Estados Unidos, conectando con la comunidad hispana a través de la risa.
+                    </p>
+                    <p id="bioText3">
+                        Si buscas una noche de risas sin filtros, donde puedas olvidarte de todo y simplemente disfrutar, mis shows son para ti.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <div class="stat-number" id="statShows">100+</div>
+                            <div class="stat-label">Shows</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number" id="statCities">15+</div>
+                            <div class="stat-label">Ciudades</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number" id="statYears">5+</div>
+                            <div class="stat-label">Años</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contacto">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">CONTACTO</h2>
+                <p class="section-subtitle">¿Quieres contratarme para tu evento? ¿Tienes alguna pregunta? Escríbeme.</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>CONTRATACIONES</h3>
+                    <p>
+                        Disponible para eventos privados, fiestas corporativas, teatros y festivales. 
+                        Si quieres llevar la comedia en español a tu evento, estás en el lugar correcto.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" id="socialInstagram" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073z"/>
+                                <path d="M12 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8z"/>
+                                <circle cx="18.406" cy="5.594" r="1.44"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" id="socialTiktok" aria-label="TikTok">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" id="socialYoutube" aria-label="YouTube">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" id="socialFacebook" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="contactName" placeholder=" " required>
+                        <label for="contactName">Nombre</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="contactEmail" placeholder=" " required>
+                        <label for="contactEmail">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <select id="contactType" required>
+                            <option value="">Tipo de consulta</option>
+                            <option value="booking">Contratación</option>
+                            <option value="press">Prensa</option>
+                            <option value="collaboration">Colaboración</option>
+                            <option value="other">Otro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="contactMessage" placeholder=" " required></textarea>
+                        <label for="contactMessage">Mensaje</label>
+                    </div>
+                    <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <span class="footer-logo">BENI PLA</span>
+            <div class="footer-links">
+                <a href="#agenda">Agenda</a>
+                <a href="#media">Media</a>
+                <a href="#sobre-mi">Sobre Mí</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span class="footer-copyright">© 2025 Beni Pla. Todos los derechos reservados.</span>
+            <button class="admin-btn" id="adminBtn" aria-label="Admin Panel">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="3"/>
+                    <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"/>
+                </svg>
+            </button>
+        </div>
+    </footer>
+    
+    <!-- Login Modal -->
+    <div class="login-overlay" id="loginOverlay">
+        <div class="login-modal">
+            <h2>ACCESO ADMIN</h2>
+            <div class="login-error" id="loginError">Credenciales incorrectas</div>
+            <form id="loginForm">
+                <div class="admin-form-group">
+                    <label for="loginUser">Usuario</label>
+                    <input type="text" id="loginUser" required>
+                </div>
+                <div class="admin-form-group">
+                    <label for="loginPass">Contraseña</label>
+                    <input type="password" id="loginPass" required>
+                </div>
+                <button type="submit" class="admin-btn-primary" style="width: 100%; margin-top: 1rem;">Entrar</button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Admin Panel -->
+    <div class="admin-overlay" id="adminOverlay">
+        <div class="admin-panel">
+            <div class="admin-header">
+                <h2>Panel de Administración</h2>
+                <button class="close-admin" id="closeAdmin">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="admin-tabs">
+                <button class="admin-tab active" data-tab="hero">Hero</button>
+                <button class="admin-tab" data-tab="bio">Biografía</button>
+                <button class="admin-tab" data-tab="media">Videos</button>
+                <button class="admin-tab" data-tab="reels">Reels</button>
+                <button class="admin-tab" data-tab="social">Redes</button>
+                <button class="admin-tab" data-tab="images">Imágenes</button>
+            </div>
+            
+            <!-- Hero Section Admin -->
+            <div class="admin-section active" id="adminHero">
+                <div class="admin-form-group">
+                    <label>Frase de Impacto (Quote)</label>
+                    <input type="text" id="adminQuote" placeholder='"La vida es demasiado corta..."'>
+                </div>
+                <button class="admin-btn-primary" id="saveHero">Guardar Cambios</button>
+            </div>
+            
+            <!-- Bio Section Admin -->
+            <div class="admin-section" id="adminBio">
+                <div class="admin-form-group">
+                    <label>Párrafo 1</label>
+                    <textarea id="adminBio1" rows="4"></textarea>
+                </div>
+                <div class="admin-form-group">
+                    <label>Párrafo 2</label>
+                    <textarea id="adminBio2" rows="4"></textarea>
+                </div>
+                <div class="admin-form-group">
+                    <label>Párrafo 3</label>
+                    <textarea id="adminBio3" rows="4"></textarea>
+                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem;">
+                    <div class="admin-form-group">
+                        <label>Shows (número)</label>
+                        <input type="text" id="adminStatShows" placeholder="100+">
+                    </div>
+                    <div class="admin-form-group">
+                        <label>Ciudades (número)</label>
+                        <input type="text" id="adminStatCities" placeholder="15+">
+                    </div>
+                    <div class="admin-form-group">
+                        <label>Años (número)</label>
+                        <input type="text" id="adminStatYears" placeholder="5+">
+                    </div>
+                </div>
+                <button class="admin-btn-primary" id="saveBio">Guardar Cambios</button>
+            </div>
+            
+            <!-- Media Section Admin -->
+            <div class="admin-section" id="adminMedia">
+                <div class="admin-form-group">
+                    <label>Videos de YouTube (uno por línea, solo el ID del video)</label>
+                    <textarea id="adminVideos" rows="6" placeholder="dQw4w9WgXcQ
+abc123xyz
+etc..."></textarea>
+                </div>
+                <p style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 1rem;">
+                    El ID del video es la parte después de "v=" en la URL de YouTube. Ejemplo: youtube.com/watch?v=<strong>dQw4w9WgXcQ</strong>
+                </p>
+                <button class="admin-btn-primary" id="saveMedia">Guardar Cambios</button>
+            </div>
+            
+            <!-- Reels Section Admin -->
+            <div class="admin-section" id="adminReels">
+                <div class="admin-form-group">
+                    <label>Reels de Instagram (formato: URL_IMAGEN | URL_REEL)</label>
+                    <textarea id="adminReelsData" rows="8" placeholder="assets/images/reel1.jpg | https://instagram.com/reel/xxx
+assets/images/reel2.jpg | https://instagram.com/reel/yyy"></textarea>
+                </div>
+                <p style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 1rem;">
+                    Cada línea debe tener: la ruta de la imagen de miniatura, seguida de " | " y la URL del reel.
+                </p>
+                <button class="admin-btn-primary" id="saveReels">Guardar Cambios</button>
+            </div>
+            
+            <!-- Social Links Admin -->
+            <div class="admin-section" id="adminSocial">
+                <div class="admin-form-group">
+                    <label>Instagram URL</label>
+                    <input type="url" id="adminInstagram" placeholder="https://instagram.com/benipla">
+                </div>
+                <div class="admin-form-group">
+                    <label>TikTok URL</label>
+                    <input type="url" id="adminTiktok" placeholder="https://tiktok.com/@benipla">
+                </div>
+                <div class="admin-form-group">
+                    <label>YouTube URL</label>
+                    <input type="url" id="adminYoutube" placeholder="https://youtube.com/@benipla">
+                </div>
+                <div class="admin-form-group">
+                    <label>Facebook URL</label>
+                    <input type="url" id="adminFacebook" placeholder="https://facebook.com/benipla">
+                </div>
+                <button class="admin-btn-primary" id="saveSocial">Guardar Cambios</button>
+            </div>
+            
+            <!-- Images Section Admin -->
+            <div class="admin-section" id="adminImages">
+                <h4 style="margin-bottom: 1rem; color: var(--neon-blue);">Subir Imágenes a GitHub</h4>
+                <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.5rem;">
+                    Sube imágenes directamente a tu repositorio de GitHub. Necesitarás configurar tu token de acceso.
+                </p>
+                
+                <div class="admin-form-group">
+                    <label>GitHub Token (Personal Access Token)</label>
+                    <input type="password" id="githubToken" placeholder="ghp_xxxxxxxxxxxx">
+                </div>
+                <div class="admin-form-group">
+                    <label>Repositorio (usuario/repo)</label>
+                    <input type="text" id="githubRepo" placeholder="benipla/benipla-web">
+                </div>
+                
+                <div class="file-upload-area" id="fileUploadArea">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
+                        <polyline points="17 8 12 3 7 8"/>
+                        <line x1="12" y1="3" x2="12" y2="15"/>
+                    </svg>
+                    <p>Arrastra imágenes aquí o haz clic para seleccionar</p>
+                    <input type="file" id="fileInput" accept="image/*" multiple>
+                </div>
+                
+                <div id="uploadProgress" style="display: none; margin-bottom: 1rem;">
+                    <div style="background: var(--midnight); border-radius: 10px; height: 10px; overflow: hidden;">
+                        <div id="progressBar" style="background: var(--gradient-neon); height: 100%; width: 0%; transition: width 0.3s;"></div>
+                    </div>
+                    <p id="uploadStatus" style="color: var(--text-secondary); font-size: 0.85rem; margin-top: 0.5rem;"></p>
+                </div>
+                
+                <h4 style="margin: 2rem 0 1rem; color: var(--neon-blue);">Imágenes Actuales</h4>
+                <div class="media-list" id="imagesList">
+                    <!-- Images will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Toast Container -->
+    <div class="toast-container" id="toastContainer"></div>
+    
+    <!-- Configuration Script -->
+    <script>
+        // Configuration - Edit this to change site content
+        const CONFIG = {
+            // Google Sheets ID for shows
+            // IMPORTANTE: Este es el ID que aparece en la URL original de tu spreadsheet
+            // URL: https://docs.google.com/spreadsheets/d/ESTE_ES_EL_ID/edit
+            // Tu ID es: 1TowBjLgHDt56AXANRkiPpbd8-X1wAbmoaEAfapS1vXg
+            GOOGLE_SHEET_ID: '1TowBjLgHDt56AXANRkiPpbd8-X1wAbmoaEAfapS1vXg',
+            
+            // Nombre de la hoja (pestaña) donde están los shows
+            SHEET_NAME: 'Sheet1',
+            
+            // Admin credentials (in production, use proper authentication)
+            ADMIN_USER: 'admin',
+            ADMIN_PASS: 'benipla2025',
+            
+            // Default content
+            defaults: {
+                quote: '"La vida es demasiado corta para no reírse de ella"',
+                bio1: 'Soy un comediante español residente en Miami que hace stand-up comedy en español. Mi humor es una mezcla de observaciones cotidianas, experiencias de inmigrante y esa honestidad brutal que solo los españoles sabemos dar.',
+                bio2: 'Desde que pisé un escenario por primera vez, supe que hacer reír a la gente era mi vocación. Ahora, llevo mi comedia por todo Estados Unidos, conectando con la comunidad hispana a través de la risa.',
+                bio3: 'Si buscas una noche de risas sin filtros, donde puedas olvidarte de todo y simplemente disfrutar, mis shows son para ti.',
+                statShows: '100+',
+                statCities: '15+',
+                statYears: '5+',
+                videos: [],
+                reels: [],
+                social: {
+                    instagram: 'https://instagram.com/benipla',
+                    tiktok: 'https://tiktok.com/@benipla',
+                    youtube: 'https://youtube.com/@benipla',
+                    facebook: 'https://facebook.com/benipla'
+                }
+            }
+        };
+    </script>
+    
+    <!-- Main Application Script -->
+    <script>
+        // ==========================================
+        // BENI PLA WEBSITE - Main Application
+        // ==========================================
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize the application
+            App.init();
+        });
+        
+        const App = {
+            isLoggedIn: false,
+            
+            init() {
+                this.loadContent();
+                this.loadShows();
+                this.setupNavigation();
+                this.setupAdmin();
+                this.setupContactForm();
+            },
+            
+            // ==========================================
+            // CONTENT LOADING
+            // ==========================================
+            
+            loadContent() {
+                // Load saved content from localStorage or use defaults
+                const saved = this.getSavedContent();
+                
+                // Hero section
+                document.getElementById('heroQuote').textContent = saved.quote || CONFIG.defaults.quote;
+                
+                // Bio section
+                document.getElementById('bioText1').textContent = saved.bio1 || CONFIG.defaults.bio1;
+                document.getElementById('bioText2').textContent = saved.bio2 || CONFIG.defaults.bio2;
+                document.getElementById('bioText3').textContent = saved.bio3 || CONFIG.defaults.bio3;
+                document.getElementById('statShows').textContent = saved.statShows || CONFIG.defaults.statShows;
+                document.getElementById('statCities').textContent = saved.statCities || CONFIG.defaults.statCities;
+                document.getElementById('statYears').textContent = saved.statYears || CONFIG.defaults.statYears;
+                
+                // Social links
+                const social = saved.social || CONFIG.defaults.social;
+                document.getElementById('socialInstagram').href = social.instagram;
+                document.getElementById('socialTiktok').href = social.tiktok;
+                document.getElementById('socialYoutube').href = social.youtube;
+                document.getElementById('socialFacebook').href = social.facebook;
+                
+                // Videos
+                this.loadVideos(saved.videos || CONFIG.defaults.videos);
+                
+                // Reels
+                this.loadReels(saved.reels || CONFIG.defaults.reels);
+            },
+            
+            getSavedContent() {
+                try {
+                    return JSON.parse(localStorage.getItem('beniplaContent')) || {};
+                } catch (e) {
+                    return {};
+                }
+            },
+            
+            saveContent(content) {
+                const current = this.getSavedContent();
+                const updated = { ...current, ...content };
+                localStorage.setItem('beniplaContent', JSON.stringify(updated));
+            },
+            
+            // ==========================================
+            // SHOWS FROM GOOGLE SHEETS
+            // ==========================================
+            
+            async loadShows() {
+                const container = document.getElementById('showsContainer');
+                
+                try {
+                    // Método 1: Intentar con Google Visualization API (JSONP)
+                    const jsonUrl = `https://docs.google.com/spreadsheets/d/${CONFIG.GOOGLE_SHEET_ID}/gviz/tq?tqx=out:json&sheet=${CONFIG.SHEET_NAME}`;
+                    
+                    let shows = [];
+                    
+                    try {
+                        const response = await fetch(jsonUrl);
+                        const text = await response.text();
+                        
+                        // Parse JSONP response - Google wraps it in a callback
+                        const jsonMatch = text.match(/google\.visualization\.Query\.setResponse\(([\s\S]*)\);?$/);
+                        if (jsonMatch) {
+                            const json = JSON.parse(jsonMatch[1]);
+                            shows = this.parseGoogleSheetsJSON(json);
+                        } else {
+                            // Try parsing as regular JSON
+                            const json = JSON.parse(text.substring(47).slice(0, -2));
+                            shows = this.parseGoogleSheetsJSON(json);
+                        }
+                    } catch (jsonError) {
+                        console.log('JSON method failed, trying CSV...', jsonError);
+                        
+                        // Método 2: Intentar con CSV
+                        const csvUrl = `https://docs.google.com/spreadsheets/d/${CONFIG.GOOGLE_SHEET_ID}/export?format=csv&gid=0`;
+                        const csvResponse = await fetch(csvUrl);
+                        const csvText = await csvResponse.text();
+                        shows = this.parseCSV(csvText);
+                    }
+                    
+                    if (shows.length === 0) {
+                        container.innerHTML = '<p class="no-shows">No hay shows programados en este momento. ¡Vuelve pronto!</p>';
+                        return;
+                    }
+                    
+                    // Filtrar shows futuros y ordenar por fecha
+                    const today = new Date();
+                    today.setHours(0, 0, 0, 0);
+                    
+                    const futureShows = shows
+                        .filter(show => {
+                            const showDate = new Date(show.fecha);
+                            return showDate >= today;
+                        })
+                        .sort((a, b) => new Date(a.fecha) - new Date(b.fecha));
+                    
+                    if (futureShows.length === 0) {
+                        container.innerHTML = '<p class="no-shows">No hay shows programados en este momento. ¡Vuelve pronto!</p>';
+                        return;
+                    }
+                    
+                    let showsHTML = '';
+                    
+                    futureShows.forEach(show => {
+                        const fecha = new Date(show.fecha);
+                        const dia = fecha.getDate();
+                        const mes = fecha.toLocaleDateString('es-ES', { month: 'short' }).toUpperCase();
+                        const año = fecha.getFullYear();
+                        
+                        showsHTML += `
+                            <div class="show-card">
+                                <div class="show-date">
+                                    <div class="show-day">${dia}</div>
+                                    <div class="show-month">${mes} ${año}</div>
+                                </div>
+                                <div class="show-info">
+                                    <h3>${show.ciudad || 'Por confirmar'}</h3>
+                                    <p class="show-venue">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                            <circle cx="12" cy="10" r="3"/>
+                                        </svg>
+                                        ${show.recinto || 'Por confirmar'}
+                                    </p>
+                                </div>
+                                ${show.tickets ? `<a href="${show.tickets}" class="ticket-btn" target="_blank" rel="noopener">Comprar</a>` : '<span class="ticket-btn" style="opacity: 0.5; cursor: default;">Próximamente</span>'}
+                            </div>
+                        `;
+                    });
+                    
+                    container.innerHTML = showsHTML;
+                    
+                } catch (error) {
+                    console.error('Error loading shows:', error);
+                    container.innerHTML = `
+                        <p class="no-shows">
+                            No se pudieron cargar los shows.<br>
+                            <small style="color: var(--text-secondary);">
+                                Verifica que el Google Sheet esté compartido como "Cualquier persona con el enlace puede ver".<br>
+                                <a href="https://docs.google.com/spreadsheets/d/${CONFIG.GOOGLE_SHEET_ID}" target="_blank" style="color: var(--neon-blue);">Abrir Google Sheet</a>
+                            </small>
+                        </p>
+                    `;
+                }
+            },
+            
+            parseGoogleSheetsJSON(json) {
+                const shows = [];
+                const rows = json.table.rows;
+                const cols = json.table.cols.map(c => (c.label || '').toLowerCase().trim());
+                
+                // Mapear nombres de columnas (soporta español e inglés)
+                const colMap = {
+                    fecha: cols.findIndex(c => c === 'fecha' || c === 'date'),
+                    ciudad: cols.findIndex(c => c === 'ciudad' || c === 'city'),
+                    recinto: cols.findIndex(c => c === 'recinto' || c === 'venue' || c === 'lugar'),
+                    tickets: cols.findIndex(c => c === 'tickets' || c === 'link' || c === 'enlace' || c === 'url')
+                };
+                
+                rows.forEach(row => {
+                    if (!row.c) return;
+                    
+                    const getValue = (idx) => {
+                        if (idx === -1 || !row.c[idx]) return '';
+                        const cell = row.c[idx];
+                        // Handle date objects from Google Sheets
+                        if (cell.v && typeof cell.v === 'string' && cell.v.startsWith('Date(')) {
+                            const dateMatch = cell.v.match(/Date\((\d+),(\d+),(\d+)\)/);
+                            if (dateMatch) {
+                                return new Date(dateMatch[1], dateMatch[2], dateMatch[3]).toISOString();
+                            }
+                        }
+                        return cell.v || cell.f || '';
+                    };
+                    
+                    const fecha = getValue(colMap.fecha);
+                    if (fecha) {
+                        shows.push({
+                            fecha: fecha,
+                            ciudad: getValue(colMap.ciudad),
+                            recinto: getValue(colMap.recinto),
+                            tickets: getValue(colMap.tickets)
+                        });
+                    }
+                });
+                
+                return shows;
+            },
+            
+            parseCSV(csvText) {
+                const shows = [];
+                const lines = csvText.split('\n').filter(line => line.trim());
+                
+                if (lines.length < 2) return shows;
+                
+                // Primera línea son los headers
+                const headers = lines[0].split(',').map(h => h.toLowerCase().trim().replace(/"/g, ''));
+                
+                // Mapear columnas
+                const colMap = {
+                    fecha: headers.findIndex(h => h === 'fecha' || h === 'date'),
+                    ciudad: headers.findIndex(h => h === 'ciudad' || h === 'city'),
+                    recinto: headers.findIndex(h => h === 'recinto' || h === 'venue' || h === 'lugar'),
+                    tickets: headers.findIndex(h => h === 'tickets' || h === 'link' || h === 'enlace' || h === 'url')
+                };
+                
+                // Procesar filas
+                for (let i = 1; i < lines.length; i++) {
+                    const values = this.parseCSVLine(lines[i]);
+                    
+                    const fecha = colMap.fecha !== -1 ? values[colMap.fecha] : '';
+                    if (fecha) {
+                        shows.push({
+                            fecha: this.parseDate(fecha),
+                            ciudad: colMap.ciudad !== -1 ? values[colMap.ciudad] : '',
+                            recinto: colMap.recinto !== -1 ? values[colMap.recinto] : '',
+                            tickets: colMap.tickets !== -1 ? values[colMap.tickets] : ''
+                        });
+                    }
+                }
+                
+                return shows;
+            },
+            
+            parseCSVLine(line) {
+                const values = [];
+                let current = '';
+                let inQuotes = false;
+                
+                for (let i = 0; i < line.length; i++) {
+                    const char = line[i];
+                    if (char === '"') {
+                        inQuotes = !inQuotes;
+                    } else if (char === ',' && !inQuotes) {
+                        values.push(current.trim());
+                        current = '';
+                    } else {
+                        current += char;
+                    }
+                }
+                values.push(current.trim());
+                
+                return values;
+            },
+            
+            parseDate(dateStr) {
+                // Intentar varios formatos de fecha
+                const str = dateStr.replace(/"/g, '').trim();
+                
+                // Formato DD/MM/YYYY
+                if (/^\d{1,2}\/\d{1,2}\/\d{4}$/.test(str)) {
+                    const [day, month, year] = str.split('/');
+                    return new Date(year, month - 1, day).toISOString();
+                }
+                
+                // Formato YYYY-MM-DD
+                if (/^\d{4}-\d{2}-\d{2}$/.test(str)) {
+                    return new Date(str).toISOString();
+                }
+                
+                // Formato MM/DD/YYYY (americano)
+                if (/^\d{1,2}\/\d{1,2}\/\d{4}$/.test(str)) {
+                    return new Date(str).toISOString();
+                }
+                
+                // Intentar parseo directo
+                const date = new Date(str);
+                if (!isNaN(date)) {
+                    return date.toISOString();
+                }
+                
+                return str;
+            },
+            
+            // ==========================================
+            // VIDEOS
+            // ==========================================
+            
+            loadVideos(videoIds) {
+                const container = document.getElementById('mediaGrid');
+                
+                if (!videoIds || videoIds.length === 0) {
+                    container.innerHTML = '<p style="color: var(--text-secondary); text-align: center; grid-column: 1/-1;">Próximamente más contenido...</p>';
+                    return;
+                }
+                
+                let html = '';
+                videoIds.forEach(id => {
+                    html += `
+                        <div class="video-card">
+                            <div class="video-wrapper">
+                                <iframe 
+                                    src="https://www.youtube.com/embed/${id}" 
+                                    title="Video de Beni Pla"
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                    `;
+                });
+                
+                container.innerHTML = html;
+            },
+            
+            // ==========================================
+            // REELS
+            // ==========================================
+            
+            loadReels(reels) {
+                const container = document.getElementById('reelsCarousel');
+                
+                if (!reels || reels.length === 0) {
+                    container.innerHTML = '<p style="color: var(--text-secondary);">Próximamente reels...</p>';
+                    return;
+                }
+                
+                let html = '';
+                reels.forEach(reel => {
+                    html += `
+                        <a href="${reel.url}" class="reel-link reel-card" target="_blank" rel="noopener">
+                            <img src="${reel.thumbnail}" alt="Reel de Beni Pla" class="reel-thumbnail">
+                        </a>
+                    `;
+                });
+                
+                container.innerHTML = html;
+            },
+            
+            // ==========================================
+            // NAVIGATION
+            // ==========================================
+            
+            setupNavigation() {
+                const mobileBtn = document.getElementById('mobileMenuBtn');
+                const navLinks = document.getElementById('navLinks');
+                
+                mobileBtn.addEventListener('click', () => {
+                    navLinks.classList.toggle('active');
+                });
+                
+                // Close mobile menu on link click
+                navLinks.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        navLinks.classList.remove('active');
+                    });
+                });
+                
+                // Smooth scroll for navigation
+                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                    anchor.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        const target = document.querySelector(this.getAttribute('href'));
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth' });
+                        }
+                    });
+                });
+            },
+            
+            // ==========================================
+            // ADMIN PANEL
+            // ==========================================
+            
+            setupAdmin() {
+                const adminBtn = document.getElementById('adminBtn');
+                const loginOverlay = document.getElementById('loginOverlay');
+                const adminOverlay = document.getElementById('adminOverlay');
+                const closeAdmin = document.getElementById('closeAdmin');
+                const loginForm = document.getElementById('loginForm');
+                const loginError = document.getElementById('loginError');
+                
+                // Open login or admin
+                adminBtn.addEventListener('click', () => {
+                    if (this.isLoggedIn) {
+                        this.openAdminPanel();
+                    } else {
+                        loginOverlay.classList.add('active');
+                    }
+                });
+                
+                // Login form
+                loginForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    const user = document.getElementById('loginUser').value;
+                    const pass = document.getElementById('loginPass').value;
+                    
+                    if (user === CONFIG.ADMIN_USER && pass === CONFIG.ADMIN_PASS) {
+                        this.isLoggedIn = true;
+                        loginOverlay.classList.remove('active');
+                        this.openAdminPanel();
+                        loginForm.reset();
+                        loginError.style.display = 'none';
+                    } else {
+                        loginError.style.display = 'block';
+                    }
+                });
+                
+                // Close login on overlay click
+                loginOverlay.addEventListener('click', (e) => {
+                    if (e.target === loginOverlay) {
+                        loginOverlay.classList.remove('active');
+                    }
+                });
+                
+                // Close admin
+                closeAdmin.addEventListener('click', () => {
+                    adminOverlay.classList.remove('active');
+                });
+                
+                adminOverlay.addEventListener('click', (e) => {
+                    if (e.target === adminOverlay) {
+                        adminOverlay.classList.remove('active');
+                    }
+                });
+                
+                // Tab switching
+                document.querySelectorAll('.admin-tab').forEach(tab => {
+                    tab.addEventListener('click', () => {
+                        document.querySelectorAll('.admin-tab').forEach(t => t.classList.remove('active'));
+                        document.querySelectorAll('.admin-section').forEach(s => s.classList.remove('active'));
+                        
+                        tab.classList.add('active');
+                        document.getElementById('admin' + tab.dataset.tab.charAt(0).toUpperCase() + tab.dataset.tab.slice(1)).classList.add('active');
+                    });
+                });
+                
+                // Save buttons
+                document.getElementById('saveHero').addEventListener('click', () => this.saveHero());
+                document.getElementById('saveBio').addEventListener('click', () => this.saveBio());
+                document.getElementById('saveMedia').addEventListener('click', () => this.saveMedia());
+                document.getElementById('saveReels').addEventListener('click', () => this.saveReels());
+                document.getElementById('saveSocial').addEventListener('click', () => this.saveSocial());
+                
+                // File upload
+                this.setupFileUpload();
+            },
+            
+            openAdminPanel() {
+                const saved = this.getSavedContent();
+                
+                // Populate admin fields
+                document.getElementById('adminQuote').value = saved.quote || CONFIG.defaults.quote;
+                document.getElementById('adminBio1').value = saved.bio1 || CONFIG.defaults.bio1;
+                document.getElementById('adminBio2').value = saved.bio2 || CONFIG.defaults.bio2;
+                document.getElementById('adminBio3').value = saved.bio3 || CONFIG.defaults.bio3;
+                document.getElementById('adminStatShows').value = saved.statShows || CONFIG.defaults.statShows;
+                document.getElementById('adminStatCities').value = saved.statCities || CONFIG.defaults.statCities;
+                document.getElementById('adminStatYears').value = saved.statYears || CONFIG.defaults.statYears;
+                
+                document.getElementById('adminVideos').value = (saved.videos || []).join('\n');
+                document.getElementById('adminReelsData').value = (saved.reels || []).map(r => `${r.thumbnail} | ${r.url}`).join('\n');
+                
+                const social = saved.social || CONFIG.defaults.social;
+                document.getElementById('adminInstagram').value = social.instagram;
+                document.getElementById('adminTiktok').value = social.tiktok;
+                document.getElementById('adminYoutube').value = social.youtube;
+                document.getElementById('adminFacebook').value = social.facebook;
+                
+                // GitHub settings
+                document.getElementById('githubToken').value = localStorage.getItem('githubToken') || '';
+                document.getElementById('githubRepo').value = localStorage.getItem('githubRepo') || '';
+                
+                document.getElementById('adminOverlay').classList.add('active');
+            },
+            
+            saveHero() {
+                const quote = document.getElementById('adminQuote').value;
+                this.saveContent({ quote });
+                document.getElementById('heroQuote').textContent = quote;
+                this.showToast('Hero guardado correctamente', 'success');
+            },
+            
+            saveBio() {
+                const content = {
+                    bio1: document.getElementById('adminBio1').value,
+                    bio2: document.getElementById('adminBio2').value,
+                    bio3: document.getElementById('adminBio3').value,
+                    statShows: document.getElementById('adminStatShows').value,
+                    statCities: document.getElementById('adminStatCities').value,
+                    statYears: document.getElementById('adminStatYears').value
+                };
+                
+                this.saveContent(content);
+                
+                document.getElementById('bioText1').textContent = content.bio1;
+                document.getElementById('bioText2').textContent = content.bio2;
+                document.getElementById('bioText3').textContent = content.bio3;
+                document.getElementById('statShows').textContent = content.statShows;
+                document.getElementById('statCities').textContent = content.statCities;
+                document.getElementById('statYears').textContent = content.statYears;
+                
+                this.showToast('Biografía guardada correctamente', 'success');
+            },
+            
+            saveMedia() {
+                const videos = document.getElementById('adminVideos').value
+                    .split('\n')
+                    .map(v => v.trim())
+                    .filter(v => v);
+                
+                this.saveContent({ videos });
+                this.loadVideos(videos);
+                this.showToast('Videos guardados correctamente', 'success');
+            },
+            
+            saveReels() {
+                const reelsData = document.getElementById('adminReelsData').value;
+                const reels = reelsData.split('\n')
+                    .map(line => {
+                        const parts = line.split('|').map(p => p.trim());
+                        if (parts.length >= 2) {
+                            return { thumbnail: parts[0], url: parts[1] };
+                        }
+                        return null;
+                    })
+                    .filter(r => r);
+                
+                this.saveContent({ reels });
+                this.loadReels(reels);
+                this.showToast('Reels guardados correctamente', 'success');
+            },
+            
+            saveSocial() {
+                const social = {
+                    instagram: document.getElementById('adminInstagram').value,
+                    tiktok: document.getElementById('adminTiktok').value,
+                    youtube: document.getElementById('adminYoutube').value,
+                    facebook: document.getElementById('adminFacebook').value
+                };
+                
+                this.saveContent({ social });
+                
+                document.getElementById('socialInstagram').href = social.instagram;
+                document.getElementById('socialTiktok').href = social.tiktok;
+                document.getElementById('socialYoutube').href = social.youtube;
+                document.getElementById('socialFacebook').href = social.facebook;
+                
+                this.showToast('Redes sociales guardadas correctamente', 'success');
+            },
+            
+            // ==========================================
+            // FILE UPLOAD TO GITHUB
+            // ==========================================
+            
+            setupFileUpload() {
+                const uploadArea = document.getElementById('fileUploadArea');
+                const fileInput = document.getElementById('fileInput');
+                
+                uploadArea.addEventListener('click', () => fileInput.click());
+                
+                uploadArea.addEventListener('dragover', (e) => {
+                    e.preventDefault();
+                    uploadArea.style.borderColor = 'var(--neon-blue)';
+                });
+                
+                uploadArea.addEventListener('dragleave', () => {
+                    uploadArea.style.borderColor = 'rgba(0, 212, 255, 0.3)';
+                });
+                
+                uploadArea.addEventListener('drop', (e) => {
+                    e.preventDefault();
+                    uploadArea.style.borderColor = 'rgba(0, 212, 255, 0.3)';
+                    const files = e.dataTransfer.files;
+                    this.uploadFiles(files);
+                });
+                
+                fileInput.addEventListener('change', (e) => {
+                    this.uploadFiles(e.target.files);
+                });
+            },
+            
+            async uploadFiles(files) {
+                const token = document.getElementById('githubToken').value;
+                const repo = document.getElementById('githubRepo').value;
+                
+                if (!token || !repo) {
+                    this.showToast('Configura tu token y repositorio de GitHub primero', 'error');
+                    return;
+                }
+                
+                // Save credentials
+                localStorage.setItem('githubToken', token);
+                localStorage.setItem('githubRepo', repo);
+                
+                const progress = document.getElementById('uploadProgress');
+                const progressBar = document.getElementById('progressBar');
+                const status = document.getElementById('uploadStatus');
+                
+                progress.style.display = 'block';
+                
+                let uploaded = 0;
+                const total = files.length;
+                
+                for (const file of files) {
+                    status.textContent = `Subiendo ${file.name}...`;
+                    
+                    try {
+                        // Convert file to base64
+                        const base64 = await this.fileToBase64(file);
+                        
+                        // Upload to GitHub
+                        const response = await fetch(`https://api.github.com/repos/${repo}/contents/assets/images/${file.name}`, {
+                            method: 'PUT',
+                            headers: {
+                                'Authorization': `token ${token}`,
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify({
+                                message: `Add image: ${file.name}`,
+                                content: base64.split(',')[1]
+                            })
+                        });
+                        
+                        if (response.ok) {
+                            uploaded++;
+                            progressBar.style.width = `${(uploaded / total) * 100}%`;
+                        } else {
+                            const error = await response.json();
+                            if (error.message.includes('sha')) {
+                                // File exists, need to update
+                                const getResponse = await fetch(`https://api.github.com/repos/${repo}/contents/assets/images/${file.name}`, {
+                                    headers: { 'Authorization': `token ${token}` }
+                                });
+                                const existing = await getResponse.json();
+                                
+                                await fetch(`https://api.github.com/repos/${repo}/contents/assets/images/${file.name}`, {
+                                    method: 'PUT',
+                                    headers: {
+                                        'Authorization': `token ${token}`,
+                                        'Content-Type': 'application/json'
+                                    },
+                                    body: JSON.stringify({
+                                        message: `Update image: ${file.name}`,
+                                        content: base64.split(',')[1],
+                                        sha: existing.sha
+                                    })
+                                });
+                                
+                                uploaded++;
+                                progressBar.style.width = `${(uploaded / total) * 100}%`;
+                            } else {
+                                throw new Error(error.message);
+                            }
+                        }
+                    } catch (error) {
+                        console.error('Upload error:', error);
+                        this.showToast(`Error subiendo ${file.name}: ${error.message}`, 'error');
+                    }
+                }
+                
+                status.textContent = `${uploaded} de ${total} archivos subidos`;
+                this.showToast(`${uploaded} imágenes subidas correctamente`, 'success');
+                
+                setTimeout(() => {
+                    progress.style.display = 'none';
+                    progressBar.style.width = '0%';
+                }, 3000);
+            },
+            
+            fileToBase64(file) {
+                return new Promise((resolve, reject) => {
+                    const reader = new FileReader();
+                    reader.readAsDataURL(file);
+                    reader.onload = () => resolve(reader.result);
+                    reader.onerror = error => reject(error);
+                });
+            },
+            
+            // ==========================================
+            // CONTACT FORM
+            // ==========================================
+            
+            setupContactForm() {
+                const form = document.getElementById('contactForm');
+                
+                form.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    
+                    const name = document.getElementById('contactName').value;
+                    const email = document.getElementById('contactEmail').value;
+                    const type = document.getElementById('contactType').value;
+                    const message = document.getElementById('contactMessage').value;
+                    
+                    // Create mailto link
+                    const subject = encodeURIComponent(`[${type}] Contacto desde la web - ${name}`);
+                    const body = encodeURIComponent(`Nombre: ${name}\nEmail: ${email}\nTipo: ${type}\n\nMensaje:\n${message}`);
+                    
+                    window.location.href = `mailto:contacto@benipla.com?subject=${subject}&body=${body}`;
+                    
+                    this.showToast('Abriendo tu cliente de correo...', 'success');
+                    form.reset();
+                });
+            },
+            
+            // ==========================================
+            // UTILITIES
+            // ==========================================
+            
+            showToast(message, type = 'info') {
+                const container = document.getElementById('toastContainer');
+                const toast = document.createElement('div');
+                toast.className = `toast ${type}`;
+                toast.textContent = message;
+                container.appendChild(toast);
+                
+                setTimeout(() => {
+                    toast.style.opacity = '0';
+                    setTimeout(() => toast.remove(), 300);
+                }, 3000);
+            }
+        };
+    </script>
+    
+    <!-- llms.txt file reference -->
+    <script type="application/json" id="llms-metadata">
+    {
+        "name": "Beni Pla",
+        "description": "Spanish stand-up comedian based in Miami, Florida. Performs comedy shows in Spanish across the United States.",
+        "type": "person",
+        "occupation": "Stand-up Comedian",
+        "languages": ["Spanish", "English", "Catalan"],
+        "location": "Miami, Florida, USA",
+        "contact": {
+            "type": "form",
+            "purpose": "booking, press, collaboration"
+        },
+        "shows": {
+            "source": "google-sheets",
+            "language": "Spanish"
+        }
+    }
+    </script>
+</body>
+</html>
